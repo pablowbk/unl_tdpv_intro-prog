@@ -64,9 +64,9 @@ int main(int argc, char* argv[]) {
 	cout << endl << "Intentos utilizados: " << intentos << endl;
 	
 	
-//	cout << endl << "presione una tecla para cerrar esta ventana..."; // este bloque es solo para cuando lo quiero abrir desde el ejecutable, asi no se cierra la ventana automaticamente al terminar
-//	cin.ignore();
-//	cin.get(); 
+	cout << endl << "presione una tecla para cerrar esta ventana..."; // este bloque es solo para cuando lo quiero abrir desde el ejecutable, asi no se cierra la ventana automaticamente al terminar
+	cin.ignore();
+	cin.get(); 
 
 	return 0;
 }

@@ -15,7 +15,13 @@ int main(int argc, char *argv[]) {
 
   for (int i = 0; i < dimensionY; i++) {
     for (int j = 0; j < dimensionX; j++) {
-      cout << j << " ";
+      arreglo[i][j] = j;
+    }
+  }
+
+  for (int i = 0; i < dimensionY; i++) {
+    for (int j = 0; j < dimensionX; j++) {
+      cout << arreglo[i][j] << " ";
     }
     cout << endl;
   }

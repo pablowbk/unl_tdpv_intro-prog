@@ -8,7 +8,11 @@ using namespace std;
 // (tener en cuenta que estén dentro del rango)
 
 int main(int argc, char *argv[]) {
-  int arreglo[20] = {0};
+  int arreglo[20];
+
+  for (int i = 0; i < 20; i++) {
+    arreglo[i] = 0;
+  }
 
   int valores[4], posiciones[4];
 

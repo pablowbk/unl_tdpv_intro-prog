@@ -27,9 +27,9 @@ int main(int argc, char *argv[]) {
 
   bool esTurnoJugador1 = true;
 
-  int puntajeJugador1 = 0;
-  int puntajeJugador2 = 0;
-  int sieteYMedio = 750;
+  float puntajeJugador1 = 0;
+  float puntajeJugador2 = 0;
+  float sieteYMedio = 7.5;
   char accionJugador;
   int cartasJugadas = 0;
   bool gameOver = cartasJugadas == 40;
@@ -51,8 +51,9 @@ int main(int argc, char *argv[]) {
 
     if (accionJugador == 'c') {
       // pedir carta
-      int indiceMazoRandom, cartaRandom, puntajeCarta;
-      indiceMazoRandom = rand() % 40;
+      int indiceMazoRandom = rand() % 40;
+      int cartaRandom;
+      float puntajeCarta;
 
       while (mazo[indiceMazoRandom][2] == 0) {
         // cout << "Carta ya jugada, buscando otra..." << endl;
@@ -65,10 +66,10 @@ int main(int argc, char *argv[]) {
       case 10:
       case 11:
       case 12:
-        puntajeCarta = 50;
+        puntajeCarta = 0.5;
         break;
       default:
-        puntajeCarta = cartaRandom * 100;
+        puntajeCarta = cartaRandom;
         break;
       }
 
@@ -91,13 +92,13 @@ int main(int argc, char *argv[]) {
       cartasJugadas++;
 
       // revisar puntaje del jugador
-      if (esTurnoJugador1 && puntajeJugador1 > 750) {
+      if (esTurnoJugador1 && puntajeJugador1 > sieteYMedio) {
         cout << "-------------------------------------------------" << endl;
         cout << "JUGADOR 1 se ha pasado de 7 y medio!! PERDISTEEEE" << endl;
         cout << "-------------------------------------------------" << endl;
         gameOver = true;
 
-      } else if (puntajeJugador2 > 750) {
+      } else if (puntajeJugador2 > sieteYMedio) {
         cout << "-------------------------------------------------" << endl;
         cout << "JUGADOR 2 se ha pasado de 7 y medio!! PERDISTEEEE" << endl;
         cout << "-------------------------------------------------" << endl;

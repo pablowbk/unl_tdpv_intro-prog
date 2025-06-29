@@ -52,7 +52,7 @@ public:
   void borrar(); // para dibujar, antes debemor borrar
   Auto1(int v, int x0, int y0);
   void setLimit(int, int, int, int);
-  Auto1(){};
+  Auto1() {};
   void update();
   int getX() { return x; }
   int getY() { return y; }
@@ -92,7 +92,7 @@ public:
   void borrar(); // para dibujar, antes debemor borrar
   Auto2(int v, int x0, int y0);
   void setLimit(int, int, int, int);
-  Auto2(){};
+  Auto2() {};
   void Cambio();
   int getX() { return x; }
   int getY() { return y; }
@@ -133,7 +133,7 @@ public:
   void borrar(); // para dibujar, antes debemor borrar
   Auto3(int v, int x0, int y0);
   void setLimit(int, int, int, int);
-  Auto3(){};
+  Auto3() {};
   void Colorear();
   int getX() { return x; }
   int getY() { return y; }
@@ -262,7 +262,8 @@ void Auto1::update() {
     int tecla = getch();
     bool moves = false;
     switch (tecla) {
-    case (65): { // arriba
+    case (72): { // arriba Windows
+                 // case (65): { // arriba Linux
       if (y - alto > minLimitY) {
         borrar();
         y = y - pasoY;
@@ -270,7 +271,8 @@ void Auto1::update() {
       }
       break;
     }
-    case (66): { // abajo
+    case (80): { // abajo Windows
+                 // case (66): { // abajo Linux
       if (y < maxLimitY) {
         borrar();
         y = y + pasoY;
@@ -278,7 +280,8 @@ void Auto1::update() {
       }
       break;
     }
-    case (67): { // derecha
+    case (77): { // derecha Windows
+                 // case (67): { // derecha Linux
       if (x + ancho < maxLimitX) {
         borrar();
         x = x + pasoX;
@@ -286,7 +289,8 @@ void Auto1::update() {
       }
       break;
     }
-    case (68): { // izquierda
+    case (75): { // izquierda Windows
+                 // case (68): { // izquierda Linux
       if (x - ancho > minLimitX) {
         borrar();
         x = x - pasoX;

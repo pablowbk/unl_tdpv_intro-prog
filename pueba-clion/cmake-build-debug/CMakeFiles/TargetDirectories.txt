@@ -1,0 +1,3 @@
+C:/Users/pablo/unl-dvj/1-intro_programacion/unl_tdpv_intro-prog/pueba-clion/cmake-build-debug/CMakeFiles/pueba_clion.dir
+C:/Users/pablo/unl-dvj/1-intro_programacion/unl_tdpv_intro-prog/pueba-clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/pablo/unl-dvj/1-intro_programacion/unl_tdpv_intro-prog/pueba-clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
